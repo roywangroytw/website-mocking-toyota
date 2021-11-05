@@ -1,3 +1,51 @@
 body {
   font-family: "Noto Sans TC", sans-serif;
 }
+
+/* NavBar Section */
+
+.navbar {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+  box-shadow: 0px 8px 15px rgba(109, 109, 109, 0.521);
+  border-bottom: 7px solid #333333;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.navlink-box a img {
+  display: inline-block;
+  height: 40px;
+}
+
+.navlink-box a {
+  margin-left: 10px;
+}
+
+.navlink-box {
+  margin-right: 50px;
+}
+
+.navbar-logo-box {
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  padding-left: 80px;
+}
+
+.navbar-logo-box::after {
+  content: "";
+  height: 7px;
+  width: 100%;
+  background-color: red;
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+}
