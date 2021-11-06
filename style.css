@@ -617,6 +617,8 @@ body {
   width: 100%;
   height: 540px;
   background: url("/images/2021-Toyota-Corolla-Banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
   /* padding-top: 200px; */
 }
@@ -677,4 +679,116 @@ body {
 
 .video_switch a:first-child {
   background-color: #bb2202;
+}
+
+/* Car section */
+
+.cartype-section {
+  padding-top: 100px;
+  box-sizing: border-box;
+}
+
+.cartype-section h1 {
+  color: #333333;
+  text-shadow: none;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cartype-section h1::after {
+  content: "";
+  width: 50px;
+  height: 4px;
+  background-color: #333333;
+  margin-top: 15px;
+}
+
+.car-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.car-card {
+  width: 210px;
+  margin-right: 10px;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.car-card img {
+  width: 100%;
+}
+
+.link-group {
+  margin-top: 30px;
+}
+
+.link-group a {
+  background-color: #ae1f12;
+  border: 1px solid #ff62ab;
+  text-decoration: none;
+  color: white;
+  padding: 1px 5px 1px 5px;
+  border-radius: 5px;
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+.cartype-section p {
+  color: #7a7a7a;
+  font-size: 0.8rem;
+  width: 960px;
+  margin: auto;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+/* Footer section */
+
+.footer {
+  width: 100%;
+  height: 95px;
+  background-color: #333333;
+  color: white;
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.footer-top img,
+.footer-top p,
+.footer-top .footer-link-box {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.footer-link-box a {
+  text-decoration: none;
+  color: white;
+  margin-right: 5px;
+  margin-left: 5px;
+  border-bottom: 0px solid white;
+}
+
+.footer-link-box a:hover {
+  border-bottom: 1px solid white;
+}
+
+.disclaimer {
+  color: #7a7a7a;
+  font-size: 0.8rem;
+  width: 960px;
+  margin: auto;
+  text-align: center;
+  margin-top: 20px;
 }
