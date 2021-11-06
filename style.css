@@ -335,8 +335,14 @@ body {
 .proud {
   width: 90%;
   max-width: 960px;
-  margin: 80px auto 50px auto;
+  margin: 150px auto 150px auto;
   box-sizing: border-box;
+  position: relative;
+}
+
+.main-message-right,
+.sub-message-right {
+  margin-left: auto;
 }
 
 .main-message {
@@ -391,6 +397,7 @@ body {
   width: 680px;
   padding: 20px;
   background-color: #eeeeee;
+  margin-top: 150px;
 }
 
 .sub-message h3 {
@@ -435,4 +442,92 @@ body {
   position: absolute;
   top: 50%;
   left: -10px;
+}
+
+/* === fun driving & comfort & proud position === */
+.fun-driving a,
+.comfort a,
+.proud a {
+  display: block;
+  width: 690px;
+  height: 430px;
+  background: url("/images/advantage01.jpg");
+  background-size: cover;
+}
+
+.comfort a {
+  background: url("/images/advantage03.jpeg");
+}
+
+.proud a {
+  background: url("/images/advantage05.jpeg");
+}
+
+.grey-block1,
+.grey-block3,
+.grey-block5 {
+  width: 440px;
+  height: 290px;
+  background-color: #efefef;
+  position: absolute;
+  right: 0;
+  top: 40px;
+  z-index: -2;
+}
+
+.vid1,
+.vid3,
+.vid5 {
+  position: absolute;
+  top: 140px;
+  left: 185px;
+  z-index: -1;
+}
+.videoicon1,
+.videoicon3,
+.videoicon5 {
+  width: 60px;
+  position: absolute;
+  top: 50%;
+  right: -8px;
+}
+
+/* === safety & human-center driving === */
+.safety a,
+.human-center a {
+  display: block;
+  width: 690px;
+  height: 430px;
+  background: url("/images/advantage02.jpeg");
+  background-size: cover;
+}
+
+.human-center a {
+  background: url("/images/advantage04.jpeg");
+}
+
+.grey-block2,
+.grey-block4 {
+  width: 440px;
+  height: 290px;
+  background-color: #efefef;
+  position: absolute;
+  right: 165px;
+  top: 40px;
+  z-index: -2;
+}
+
+.vid2,
+.vid4 {
+  position: absolute;
+  top: 140px;
+  left: 0px;
+  z-index: -1;
+}
+.videoicon2,
+.videoicon4 {
+  width: 60px;
+  position: absolute;
+  top: 50%;
+  left: -8px;
 }
