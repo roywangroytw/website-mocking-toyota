@@ -531,3 +531,59 @@ body {
   top: 50%;
   left: -8px;
 }
+
+/* Innovation section */
+
+.innovation-section {
+  width: 90%;
+  max-width: 960px;
+  margin: auto;
+}
+
+.innovation-section img {
+  width: 100%;
+}
+
+.btn_outer {
+  width: 285px;
+  height: 90px;
+  background-color: black;
+  position: relative;
+  margin-left: auto;
+}
+
+.btn_inner {
+  width: 70%;
+  height: 60px;
+  background-color: #bb2202;
+  position: absolute;
+  top: 15px;
+}
+
+.btn_link {
+  text-decoration: none;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 60px;
+  padding-left: 80px;
+  margin-bottom: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn_link::after {
+  content: "";
+  width: 150px;
+  height: 1px;
+  background-color: white;
+  margin-top: 0;
+  position: relative;
+  bottom: 10px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+
+.btn_link:hover::after {
+  left: 20px;
+}
