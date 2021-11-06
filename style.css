@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@200&display=swap");
+
 body {
   font-family: "Noto Sans TC", sans-serif;
 }
@@ -238,4 +240,154 @@ body {
 .top-part.tp2:hover + .bottom-part {
   visibility: visible;
   cursor: pointer;
+}
+
+.divider {
+  background-color: #de2a08;
+  border: none;
+  height: 1px;
+}
+
+/* Advantage section */
+
+.advantage-section {
+  padding-top: 80px;
+}
+
+.advantage-section h1 {
+  color: #333333;
+  text-shadow: none;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advantage-section h1::after {
+  content: "";
+  width: 50px;
+  height: 4px;
+  background-color: #333333;
+  margin-top: 15px;
+}
+
+.advantage-anchor-box {
+  width: 90%;
+  max-width: 960px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.advantage-anchor-box a {
+  width: 180px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-bottom: 2px solid #ae1f12;
+  border-top: 1px dotted black;
+  border-left: 1px dotted black;
+  border-right: 1px dotted black;
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 300;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.1s ease;
+}
+
+.ad-link1::after,
+.ad-link2::after,
+.ad-link3::after,
+.ad-link4::after,
+.ad-link5::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #ae1f12;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+
+.ad-link1:hover::after,
+.ad-link2:hover::after,
+.ad-link3:hover::after,
+.ad-link4:hover::after,
+.ad-link5:hover::after {
+  top: 0%;
+}
+
+.advantage-anchor-box a:hover {
+  color: white;
+}
+
+/* === fun driving === */
+
+.fun-driving,
+.safety,
+.comfort,
+.human-center,
+.proud {
+  width: 90%;
+  max-width: 960px;
+  margin: 50px auto 50px auto;
+  box-sizing: border-box;
+}
+
+.main-message {
+  width: 350px;
+  height: 390px;
+  background-color: black;
+  color: white;
+}
+
+.main-message-top {
+  background-color: #bb2202;
+  height: 140px;
+  display: flex;
+}
+
+.number {
+  writing-mode: vertical-rl;
+  width: 35%;
+  font-size: 8.5rem;
+  font-weight: 300;
+  font-family: "Encode Sans Semi Condensed", sans-serif;
+  text-align: center;
+}
+
+.number-title {
+  font-size: 3.2rem;
+  line-height: 140px;
+  font-weight: 200;
+  letter-spacing: 3px;
+  width: 65%;
+  text-align: center;
+}
+
+.main-message-subheading {
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  padding: 20px;
+  padding-bottom: 10px;
+  padding-top: 30px;
+}
+
+.main-message-p {
+  padding: 20px;
+  padding-top: 0px;
+  font-size: 1.2rem;
+  font-weight: 100;
+  line-height: 1.8;
+}
+
+.sub-message {
+  width: 680px;
+  height: 270px;
 }
