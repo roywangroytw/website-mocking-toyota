@@ -335,7 +335,7 @@ body {
 .proud {
   width: 90%;
   max-width: 960px;
-  margin: 50px auto 50px auto;
+  margin: 80px auto 50px auto;
   box-sizing: border-box;
 }
 
@@ -389,5 +389,50 @@ body {
 
 .sub-message {
   width: 680px;
-  height: 270px;
+  padding: 20px;
+  background-color: #eeeeee;
+}
+
+.sub-message h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #bb2202;
+  display: flex;
+  align-items: center;
+}
+
+.sub-message h3::after {
+  content: "";
+  width: 69%;
+  height: 1px;
+  background-color: #bb2202;
+  margin-left: 10px;
+}
+
+.sub-message h4 {
+  background-color: black;
+  display: inline-block;
+  color: white;
+  padding: 7px;
+  font-weight: 300;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.sub-message li {
+  font-weight: 300;
+  color: #626262;
+  list-style-type: none;
+  position: relative;
+  margin-left: 20px;
+}
+
+.sub-message li::before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  background-color: #bb2202;
+  position: absolute;
+  top: 50%;
+  left: -10px;
 }
